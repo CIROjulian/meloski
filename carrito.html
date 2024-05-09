@@ -37,65 +37,25 @@
         <main>
             <h2 class="titulo-principal">carrito</h2>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">tu carrito esta vacio . <i class="bi bi-emoji-frown-fill"></i></p>
+                <p id="carrito-vacio" class="carrito-vacio">tu carrito esta vacio . <i class="bi bi-emoji-frown-fill"></i></p>
 
-                <div class="carrito-productos">
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Esto se va a completar con el JS -->
+                </div>
 
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" id="dos" src="melo.png" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>titulo</small>
-                            <h3>compu 1</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>subtotal</small>
-                            <p>$1000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
                     </div>
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" id="uno" src="melo.png" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>titulo</small>
-                            <h3>compu 1</h3>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
                         </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>cantidad</small>
-                            <p>1</p>
-                        </div>
-                            <div class="carrito-producto-precio">
-                                <small>precio</small>
-                                <p>$1000</p>
-                            </div>
-                            <div class="carrito-producto-subtotal">
-                                <small>subtotal</small>
-                                <p>$1000</p>
-                            </div>
-                            <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-                        
-                    </div>
-                    <div class="carrito-acciones">
-                        <div class="carrito-acciones-izquierda">
-                            <button class="carrito-acciones-vaciar">vaciar carrito</button>
-                        </div>
-                        <div class="carrito-acciones-derecha">
-                            <div class="carrito acciones-total">
-                                <p>total</p>
-                                <p id="total">$3000</p>
-                            </div>
-                            <button class="carrito-acciones-comprar">comprar ahora</button>
-                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
+                <p id="carrito-comprado" class="carrito-comprado disabled">muchas gracias por su compra</p>
             </div>
         </main>
     </div>
