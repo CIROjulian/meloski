@@ -32,6 +32,7 @@ a {
     grid-template-columns: 1fr 4fr;
     background-color: var(--clr-main);
 }
+
 aside{
     padding: 2rem;
     padding-right: 0;
